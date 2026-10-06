@@ -1,0 +1,7 @@
+C:\Users\seans\source\repos\Personalregister\bin\Debug\Personalregister.exe.config
+C:\Users\seans\source\repos\Personalregister\bin\Debug\Personalregister.exe
+C:\Users\seans\source\repos\Personalregister\bin\Debug\Personalregister.pdb
+C:\Users\seans\source\repos\Personalregister\obj\Debug\Personalregister.csproj.AssemblyReference.cache
+C:\Users\seans\source\repos\Personalregister\obj\Debug\Personalregister.csproj.CoreCompileInputs.cache
+C:\Users\seans\source\repos\Personalregister\obj\Debug\Personalregister.exe
+C:\Users\seans\source\repos\Personalregister\obj\Debug\Personalregister.pdb
