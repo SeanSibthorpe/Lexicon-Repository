@@ -1,0 +1,7 @@
+C:\Users\seans\source\repos\Flow Control\bin\Debug\Flow Control.exe.config
+C:\Users\seans\source\repos\Flow Control\bin\Debug\Flow Control.exe
+C:\Users\seans\source\repos\Flow Control\bin\Debug\Flow Control.pdb
+C:\Users\seans\source\repos\Flow Control\obj\Debug\Flow Control.csproj.AssemblyReference.cache
+C:\Users\seans\source\repos\Flow Control\obj\Debug\Flow Control.csproj.CoreCompileInputs.cache
+C:\Users\seans\source\repos\Flow Control\obj\Debug\Flow Control.exe
+C:\Users\seans\source\repos\Flow Control\obj\Debug\Flow Control.pdb
