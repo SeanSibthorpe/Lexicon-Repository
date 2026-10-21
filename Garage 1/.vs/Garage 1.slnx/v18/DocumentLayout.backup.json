@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\seans\\source\\repos\\Garage 1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|c:\\users\\seans\\source\\repos\\garage 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|c:\\users\\seans\\source\\repos\\garage 1\\garage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|solutionrelative:garage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|c:\\users\\seans\\source\\repos\\garage 1\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|solutionrelative:vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|c:\\users\\seans\\source\\repos\\garage 1\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|solutionrelative:car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|c:\\users\\seans\\source\\repos\\garage 1\\boat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|solutionrelative:boat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|c:\\users\\seans\\source\\repos\\garage 1\\bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|solutionrelative:bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|c:\\users\\seans\\source\\repos\\garage 1\\airplane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|solutionrelative:airplane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|c:\\users\\seans\\source\\repos\\garage 1\\motorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{986A59BF-9361-4F3A-B3F9-B60BC8413F1C}|Garage 1.csproj|solutionrelative:motorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\seans\\source\\repos\\Garage 1\\Car.cs",
+              "RelativeDocumentMoniker": "Car.cs",
+              "ToolTip": "C:\\Users\\seans\\source\\repos\\Garage 1\\Car.cs",
+              "RelativeToolTip": "Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T21:04:10.123Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Boat.cs",
+              "DocumentMoniker": "C:\\Users\\seans\\source\\repos\\Garage 1\\Boat.cs",
+              "RelativeDocumentMoniker": "Boat.cs",
+              "ToolTip": "C:\\Users\\seans\\source\\repos\\Garage 1\\Boat.cs",
+              "RelativeToolTip": "Boat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T21:20:28.426Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Airplane.cs",
+              "DocumentMoniker": "C:\\Users\\seans\\source\\repos\\Garage 1\\Airplane.cs",
+              "RelativeDocumentMoniker": "Airplane.cs",
+              "ToolTip": "C:\\Users\\seans\\source\\repos\\Garage 1\\Airplane.cs",
+              "RelativeToolTip": "Airplane.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T21:19:57.905Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Motorcycle.cs",
+              "DocumentMoniker": "C:\\Users\\seans\\source\\repos\\Garage 1\\Motorcycle.cs",
+              "RelativeDocumentMoniker": "Motorcycle.cs",
+              "ToolTip": "C:\\Users\\seans\\source\\repos\\Garage 1\\Motorcycle.cs",
+              "RelativeToolTip": "Motorcycle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T21:19:45.318Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Bus.cs",
+              "DocumentMoniker": "C:\\Users\\seans\\source\\repos\\Garage 1\\Bus.cs",
+              "RelativeDocumentMoniker": "Bus.cs",
+              "ToolTip": "C:\\Users\\seans\\source\\repos\\Garage 1\\Bus.cs",
+              "RelativeToolTip": "Bus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T21:20:15.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\seans\\source\\repos\\Garage 1\\Vehicle.cs",
+              "RelativeDocumentMoniker": "Vehicle.cs",
+              "ToolTip": "C:\\Users\\seans\\source\\repos\\Garage 1\\Vehicle.cs",
+              "RelativeToolTip": "Vehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T21:02:29.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Garage.cs",
+              "DocumentMoniker": "C:\\Users\\seans\\source\\repos\\Garage 1\\Garage.cs",
+              "RelativeDocumentMoniker": "Garage.cs",
+              "ToolTip": "C:\\Users\\seans\\source\\repos\\Garage 1\\Garage.cs",
+              "RelativeToolTip": "Garage.cs",
+              "ViewState": "AgIAAFUCAAAAAAAAAAAAAGECAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T21:02:46.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\seans\\source\\repos\\Garage 1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\seans\\source\\repos\\Garage 1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAQwKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T20:45:27.989Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
