@@ -10,6 +10,7 @@ namespace Garage_1
     {
 
         private bool running = true;
+        private bool populated = false;
         Garage garage = null;
 
         static void Main(string[] args)
@@ -23,7 +24,6 @@ namespace Garage_1
 
         private void StartMenu()
         {
-
             Console.WriteLine("MAIN MENU\nPress 0 to Exit application.\nPress 1 to create a new garage.\nPress 2 to manage existing garage.\n");
 
             
@@ -114,56 +114,51 @@ namespace Garage_1
                 case ConsoleKey.NumPad0:
                     //Do nothing and return to main menu
                     break;
-
                 case ConsoleKey.D1:
                 case ConsoleKey.NumPad1:
-
-                    garage.AddVehicle();
-                    
+                    garage.AddVehicle();                    
                     break;
 
                 case ConsoleKey.D2:
                 case ConsoleKey.NumPad2:
-
-                    garage.RemoveVehicle();
-                    
+                    garage.RemoveVehicle();                    
                     break;
 
                 case ConsoleKey.D3:
                 case ConsoleKey.NumPad3:
-
                     garage.RetrieveVehicleByRegNr();
-
                     break;
 
                 case ConsoleKey.D4:
-                case ConsoleKey.NumPad4:
-                    
+                case ConsoleKey.NumPad4:                    
                     garage.ListVehicles();
-
                     break;
 
                 case ConsoleKey.D5:
                 case ConsoleKey.NumPad5:
-
                     garage.ListVehiclesUsingFilter();
-
                     break;
 
                 case ConsoleKey.D6:
                 case ConsoleKey.NumPad6:
-
                     garage.ListVehicleTypes();
-
                     break;
+
                 case ConsoleKey.D7:
-                case ConsoleKey.NumPad7:
-
-                    garage.Populate();
-                    Console.WriteLine("Garage populated.");
-
+                case ConsoleKey.NumPad7:                    
+                    if (!populated)
+                    {
+                        if (garage.Populate())
+                        {
+                            populated = true;
+                            Console.WriteLine("Garage populated.\n");
+                        }                        
+                    }
+                    else
+                    {
+                        Console.WriteLine("This function can only be used once.\n");
+                    }
                     break;
-
 
                 default:
                     Console.WriteLine("Incorrect Input.\n");

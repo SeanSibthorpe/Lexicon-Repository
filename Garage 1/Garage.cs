@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+//using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Policy;
 using System.Text;
@@ -77,7 +77,9 @@ namespace Garage_1
         public void ListVehiclesUsingFilter()
         {
             //List all parked vehicles using specified filters.
-            IEnumerable<Vehicle> filteredVehicles = vehicleStorage.Where(v => v != null);
+            //IEnumerable<Vehicle> filteredVehicles = vehicleStorage.Where(v => v != null);
+            Vehicle[] filteredVehicles = new Vehicle[vehicleStorage.Length];
+            Array.Copy(vehicleStorage, filteredVehicles, vehicleStorage.Length);
 
             bool filterType = false;
             string selectedType = string.Empty;
@@ -217,12 +219,12 @@ namespace Garage_1
                 Console.Write("Enter a wheel amount: ");
                 if (!int.TryParse(Console.ReadLine(), out wheelAmount))
                 {
-                    Console.WriteLine("Incorrect input.");
+                    Console.WriteLine("Incorrect input.\n");
                     return;
                 }
                 else if (wheelAmount < 0)
                 {
-                    Console.WriteLine("Wheel amount must be 0 or greater.");
+                    Console.WriteLine("Wheel amount must be 0 or greater.\n");
                     return;
                 }
                 else
@@ -233,25 +235,72 @@ namespace Garage_1
 
             }
 
+
             if (filterType == true)
             {
-                filteredVehicles = filteredVehicles.Where(v => v.GetVehicleType() == selectedType);
+                //filteredVehicles = filteredVehicles.Where(v => v.GetVehicleType() == selectedType);
+                for (int i = 0; i < filteredVehicles.Length; i++)
+                {
+                    if (filteredVehicles[i] != null)
+                    {
+                        if (filteredVehicles[i].GetVehicleType() != selectedType)
+                        {
+                            filteredVehicles[i] = null;
+                        }
+                    }
+                    
+                }
             }
 
             if (filterColour == true)
             {
-                filteredVehicles = filteredVehicles.Where(v => v.ThisColour == colourFilter);
+                //filteredVehicles = filteredVehicles.Where(v => v.ThisColour == colourFilter);
+                for (int i = 0; i < filteredVehicles.Length; i++)
+                {
+                    if (filteredVehicles[i] != null)
+                    {
+                        if (filteredVehicles[i].ThisColour != colourFilter)
+                        {
+                            filteredVehicles[i] = null;
+                        }
+                    }
+
+                }
+
             }
 
             if (filterWheels == true)
             {
-                filteredVehicles = filteredVehicles.Where(v => v.Wheels == wheelAmount);
+                //filteredVehicles = filteredVehicles.Where(v => v.Wheels == wheelAmount);
+                for (int i = 0; i < filteredVehicles.Length; i++)
+                {
+                    if (filteredVehicles[i] != null)
+                    {
+                        if (filteredVehicles[i].Wheels != wheelAmount)
+                        {
+                            filteredVehicles[i] = null;
+                        }
+                    }
+
+                }
             }
 
+            bool isEmpty = true;
             foreach (Vehicle vehicle in filteredVehicles)
             {
+                if (vehicle == null)
+                {
+                    continue;
+                }
+                isEmpty = false;
                 Console.WriteLine($"{vehicle.GetVehicleType()}: {vehicle.RegNr}, {vehicle.ThisColour}");
             }
+
+            if (isEmpty)
+            {
+                Console.WriteLine("There were no vehicles with those specifications.");
+            }
+            Console.WriteLine("");
         }
 
         private int FindEmptySpot()
@@ -267,9 +316,134 @@ namespace Garage_1
             return -1;
         }
 
+        public void CreateCar()
+        {
+
+            string regNr = EnterRegNr();
+            int wheels = SelectWheels();
+            Vehicle.Colour colour = SelectColour();
+            Console.WriteLine($"{colour.ToString()} chosen.\n");
+            Car.FuelType fuel = Car.SelectFuelType();
+
+            int index = FindEmptySpot();
+
+            if (index < 0)
+            {
+                //No spot was found
+                Console.WriteLine("No spot availble");
+                return;
+            }
+            else
+            {
+                vehicleStorage[index] = new Car(fuel, regNr, wheels, colour);
+                currentCapacity++;
+                Console.WriteLine("Vehicle successfully added\n");
+            }         
+
+        }
+        public void CreateBus()
+        {
+
+            string regNr = EnterRegNr();
+            int wheels = SelectWheels();
+            Vehicle.Colour colour = SelectColour();
+            Console.WriteLine($"{colour.ToString()} chosen.\n");
+            int busSeats = Bus.GetBusSeats();
+
+            int index = FindEmptySpot();
+
+            if (index < 0)
+            {
+                //No spot was found
+                Console.WriteLine("No spot availble");
+                return;
+            }
+            else
+            {
+                vehicleStorage[index] = new Bus(busSeats, regNr, wheels, colour);
+                currentCapacity++;
+                Console.WriteLine("Vehicle successfully added\n");
+            }
+
+        }
+        public void CreateBoat()
+        {
+
+            string regNr = EnterRegNr();
+            int wheels = SelectWheels();
+            Vehicle.Colour colour = SelectColour();
+            Console.WriteLine($"{colour.ToString()} chosen.\n");
+            int length = Boat.GetLength();
+
+            int index = FindEmptySpot();
+
+            if (index < 0)
+            {
+                //No spot was found
+                Console.WriteLine("No spot availble");
+                return;
+            }
+            else
+            {
+                vehicleStorage[index] = new Boat(length, regNr, wheels, colour);
+                currentCapacity++;
+                Console.WriteLine("Vehicle successfully added\n");
+            }
+
+        }
+        public void CreateMotorcycle()
+        {
+
+            string regNr = EnterRegNr();
+            int wheels = SelectWheels();
+            Vehicle.Colour colour = SelectColour();
+            Console.WriteLine($"{colour.ToString()} chosen.\n");
+            int cylinderVolume = Motorcycle.GetCylinderVolume();
+
+            int index = FindEmptySpot();
+
+            if (index < 0)
+            {
+                //No spot was found
+                Console.WriteLine("No spot availble");
+                return;
+            }
+            else
+            {
+                vehicleStorage[index] = new Motorcycle(cylinderVolume, regNr, wheels, colour);
+                currentCapacity++;
+                Console.WriteLine("Vehicle successfully added\n");
+            }
+
+        }
+        public void CreateAirplane()
+        {
+
+            string regNr = EnterRegNr();
+            int wheels = SelectWheels();
+            Vehicle.Colour colour = SelectColour();
+            Console.WriteLine($"{colour.ToString()} chosen.\n");
+            int engines = Airplane.GetEngines();
+
+            int index = FindEmptySpot();
+
+            if (index < 0)
+            {
+                //No spot was found
+                Console.WriteLine("No spot availble");
+                return;
+            }
+            else
+            {
+                vehicleStorage[index] = new Airplane(engines, regNr, wheels, colour);
+                currentCapacity++;
+                Console.WriteLine("Vehicle successfully added\n");
+            }
+
+        }        
         public void AddVehicle()
         {
-            if (!CheckSpace())
+            if (GarageIsFull())
             {
                 //There is no space
                 Console.WriteLine("The garage is full. Returning to Main Menu.\n");
@@ -280,14 +454,7 @@ namespace Garage_1
             while (addingVehicle)
             {
                 Console.WriteLine("Press 1 to add a Car.\nPress 2 to add a Motorcycle.\nPress 3 to add a Bus.\nPress 4 to add a Boat.\nPress 5 to add an Airplane\nPress 0 to return to Main Menu.");
-                ConsoleKeyInfo key = Console.ReadKey(true);
-
-                string regNr;
-                Vehicle.Colour colour;
-
-                int wheels;
-
-                
+                ConsoleKeyInfo key = Console.ReadKey(true);             
 
 
                 switch (key.Key)
@@ -300,81 +467,36 @@ namespace Garage_1
                     case ConsoleKey.D1:
                     case ConsoleKey.NumPad1:
                         //Add car
-                        regNr = EnterRegNr();
-                        wheels = SelectWheels();
-                        colour = SelectColour();
-                        Console.WriteLine($"{colour.ToString()} chosen.\n");
-
-                        Car.FuelType fuel = Car.SelectFuelType();
-
-                        vehicleStorage[FindEmptySpot()] = new Car(fuel, regNr, wheels, colour);
-                        currentCapacity++;
-                        Console.WriteLine("Vehicle successfully added\n");
-
+                        CreateCar();
+                        addingVehicle = false;
                         break;
 
                     case ConsoleKey.D2:
                     case ConsoleKey.NumPad2:
                         //Add MC
-                        regNr = EnterRegNr();
-                        wheels = SelectWheels();
-                        colour = SelectColour();
-                        Console.WriteLine($"{colour.ToString()} chosen.\n");
-
-                        int cylinderVolume = Motorcycle.GetCylinderVolume();
-
-                        vehicleStorage[FindEmptySpot()] = new Motorcycle(cylinderVolume, regNr, wheels, colour);
-                        currentCapacity++;
-                        Console.WriteLine("Vehicle successfully added\n");
-
+                        CreateMotorcycle();
+                        addingVehicle = false;
                         break;
 
                     case ConsoleKey.D3:
                     case ConsoleKey.NumPad3:
                         //Add bus
-                        regNr = EnterRegNr();
-                        wheels = SelectWheels();
-                        colour = SelectColour();
-                        Console.WriteLine($"{colour.ToString()} chosen.\n");
-
-                        int busSeats = Bus.GetBusSeats();
-
-                        vehicleStorage[FindEmptySpot()] =new Bus(busSeats, regNr, wheels, colour);
-                        currentCapacity++;
-                        Console.WriteLine("Vehicle successfully added\n");
-
+                        CreateBus();
+                        addingVehicle = false;
                         break;
 
                     case ConsoleKey.D4:
                     case ConsoleKey.NumPad4:
                         //Add boat
-                        regNr = EnterRegNr();
-                        wheels = SelectWheels();
-                        colour = SelectColour();
-                        Console.WriteLine($"{colour.ToString()} chosen.\n");
-
-                        int length = Boat.GetLength();
-
-                        vehicleStorage[FindEmptySpot()] = new Boat(length, regNr, wheels, colour);
-                        currentCapacity++;
-                        Console.WriteLine("Vehicle successfully added\n");
-
+                        CreateBoat();
+                        addingVehicle = false;
                         break;
 
                     case ConsoleKey.D5:
                     case ConsoleKey.NumPad5:
                         //add plane
-                        regNr = EnterRegNr();
-                        wheels = SelectWheels();
-                        colour = SelectColour();
-                        Console.WriteLine($"{colour.ToString()} chosen.\n");
-
-                        int engines = Airplane.GetEngines();
-
-                        vehicleStorage[FindEmptySpot()] = new Airplane(engines, regNr, wheels, colour);
-                        currentCapacity++;
-                        Console.WriteLine("Vehicle successfully added\n");
-
+                        CreateAirplane();
+                        addingVehicle = false;
                         break;
 
                     default:
@@ -389,22 +511,19 @@ namespace Garage_1
 
         public void RemoveVehicle()
         {
-            Console.Write("Enter the regestrationnumber: ");
+            Console.Write("Enter the registrationnumber: ");
             string regNr = (Console.ReadLine() ?? "").ToUpper();
             Console.WriteLine("");
             if (regNr.Length != 6)
             {
-                Console.WriteLine("Incorrect registrationnumber. Must be a combination of 6 letters and numbers.\n");
+                Console.WriteLine("Incorrect registrationnumber. The format must be ABC123 or ABC12D.\n");
                 return;
             }
-            foreach (char c in regNr)
+
+            if (!validateRegNr(regNr))
             {
-                if (!((c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9')))
-                {
-                    Console.WriteLine("Registration number must contain only letters and numbers.\n");
-                    return; ;
-                }
-            }
+                Console.WriteLine("Incorrect registrationnumber. The format must be ABC123 or ABC12D.\n");
+            }      
             for (int i = 0; i < vehicleStorage.Length; i++)
             {
                 if (vehicleStorage[i] != null)
@@ -548,16 +667,16 @@ namespace Garage_1
             
         }
 
-        private bool CheckSpace()
+        private bool GarageIsFull()
         {
             if (currentCapacity >= maxCapacity)
             {
-                return false;
+                return true;
             }
 
             else 
             { 
-                return true; 
+                return false; 
             }
 
         }
@@ -571,39 +690,44 @@ namespace Garage_1
             {
                 Console.WriteLine("What is the registrationnumber?\n");
                 regNr = (Console.ReadLine() ?? "").ToUpper();
-
+                /*
                 if (vehicleStorage.Any(v => v != null && v.RegNr == regNr))
                 {
                     Console.WriteLine ("A vehicle with that registrationnumber already exists.\n");
                     continue;
 
                 }
+                */
+
+                bool duplicateRegNr = false;
+                foreach(Vehicle v in vehicleStorage)
+                {
+                    if (v == null) continue;
+                    if (v.RegNr == regNr)
+                    {
+                        duplicateRegNr = true;
+                        break;
+                    }
+                }
+
+                if (duplicateRegNr) {
+                    Console.WriteLine("A vehicle with that registrationnumber already exists. Please enter a different registrationnumber.\n");
+                    continue;
+                }
                 if (regNr.Length != 6)
                 {
-                    Console.WriteLine("Incorrect registrationnumber. Must be a combination of 6 letters and numbers.\n");
+                    Console.WriteLine("Incorrect registrationnumber. The format must be ABC123 or ABC12D.\n");
                     continue;
                 }
 
-                bool valid = true;
-                foreach (char c in regNr)
+                if (validateRegNr(regNr))
                 {
-                    if (!((c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9')))
-                    {
-                        valid = false;
-                        break; 
-                    }                    
-
+                    entering = false;
                 }
-
-                if (!valid)
+                else
                 {
                     Console.WriteLine("Registration number must contain only letters and numbers.\n");
                     continue;
-                }
-
-                if (valid)
-                {
-                    entering= false;
                 }
 
             }
@@ -612,7 +736,7 @@ namespace Garage_1
 
         }
 
-        public void Populate() //Requires 10 empty spots
+        public bool Populate() //Requires 10 empty spots
         {
             int counter = 0;
             for (int i = 0; i < vehicleStorage.Length; i++)
@@ -636,14 +760,32 @@ namespace Garage_1
                 vehicleStorage[FindEmptySpot()] = new Car(Car.FuelType.Gasoline, "890ASD", 4, Colour.Green);
 
                 currentCapacity += 10;
-
+                return true;
             }
             else
             {
-                Console.WriteLine("Not enough space.");
+                Console.WriteLine("Not enough space. Requires ten empty spots.\n");
+                return false;
             }
             
 
+        }
+
+        private bool validateRegNr(string regnr)
+        {
+            return ((char.IsLetter(regnr[0]) && 
+                char.IsLetter(regnr[1]) && 
+                char.IsLetter(regnr[2]) && 
+                char.IsDigit(regnr[3]) && 
+                char.IsDigit(regnr[4]) && 
+                char.IsDigit(regnr[5])) 
+                || 
+                (char.IsLetter(regnr[0]) && 
+                char.IsLetter(regnr[1]) && 
+                char.IsLetter(regnr[2]) && 
+                char.IsDigit(regnr[3]) && 
+                char.IsDigit(regnr[4]) && 
+                char.IsLetter(regnr[5])));
         }
        
         
