@@ -1,0 +1,7 @@
+C:\Users\seans\source\repos\Övning7\bin\Debug\Övning7.exe.config
+C:\Users\seans\source\repos\Övning7\bin\Debug\Övning7.exe
+C:\Users\seans\source\repos\Övning7\bin\Debug\Övning7.pdb
+C:\Users\seans\source\repos\Övning7\obj\Debug\Övning7.csproj.AssemblyReference.cache
+C:\Users\seans\source\repos\Övning7\obj\Debug\Övning7.csproj.CoreCompileInputs.cache
+C:\Users\seans\source\repos\Övning7\obj\Debug\Övning7.exe
+C:\Users\seans\source\repos\Övning7\obj\Debug\Övning7.pdb

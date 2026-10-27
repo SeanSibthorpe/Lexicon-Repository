@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\seans\\source\\repos\\\u00D6vning7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A8AF41D8-172A-445F-BA77-71AE3D4136D2}|\u00D6vning7.csproj|c:\\users\\seans\\source\\repos\\\u00F6vning7\\linqovningar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8AF41D8-172A-445F-BA77-71AE3D4136D2}|\u00D6vning7.csproj|solutionrelative:linqovningar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LinqOvningar.cs",
+              "DocumentMoniker": "C:\\Users\\seans\\source\\repos\\\u00D6vning7\\LinqOvningar.cs",
+              "RelativeDocumentMoniker": "LinqOvningar.cs",
+              "ToolTip": "C:\\Users\\seans\\source\\repos\\\u00D6vning7\\LinqOvningar.cs",
+              "RelativeToolTip": "LinqOvningar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T21:36:13.864Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
