@@ -1,0 +1,15 @@
+C:\Users\seans\source\repos\Övning8\bin\Debug\net10.0\Övning8.exe
+C:\Users\seans\source\repos\Övning8\bin\Debug\net10.0\Övning8.deps.json
+C:\Users\seans\source\repos\Övning8\bin\Debug\net10.0\Övning8.runtimeconfig.json
+C:\Users\seans\source\repos\Övning8\bin\Debug\net10.0\Övning8.dll
+C:\Users\seans\source\repos\Övning8\bin\Debug\net10.0\Övning8.pdb
+C:\Users\seans\source\repos\Övning8\obj\Debug\net10.0\Övning8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seans\source\repos\Övning8\obj\Debug\net10.0\Övning8.AssemblyInfoInputs.cache
+C:\Users\seans\source\repos\Övning8\obj\Debug\net10.0\Övning8.AssemblyInfo.cs
+C:\Users\seans\source\repos\Övning8\obj\Debug\net10.0\Övning8.csproj.CoreCompileInputs.cache
+C:\Users\seans\source\repos\Övning8\obj\Debug\net10.0\Övning8.dll
+C:\Users\seans\source\repos\Övning8\obj\Debug\net10.0\refint\Övning8.dll
+C:\Users\seans\source\repos\Övning8\obj\Debug\net10.0\Övning8.pdb
+C:\Users\seans\source\repos\Övning8\obj\Debug\net10.0\Övning8.genruntimeconfig.cache
+C:\Users\seans\source\repos\Övning8\obj\Debug\net10.0\ref\Övning8.dll
+C:\Users\seans\source\repos\Övning8\obj\Debug\net10.0\Övning8.csproj.Up2Date
